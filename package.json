@@ -1,7 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "precommit": "npm run lint",
     "test": "npm run lint && mocha ./node_modules/html-tests/task-stub/test && mocha test/*.spec.js",
     "lint": "stylelint *.css **/*.css && html-validator --file index.html --verbose && htmllint *.html"
   },
@@ -13,5 +12,8 @@
     "should": "11.1.0",
     "stylelint": "7.3.1",
     "stylelint-config-hrundel": "latest"
+  },
+  "devDependencies": {
+    "husky": "0.12.0"
   }
 }
